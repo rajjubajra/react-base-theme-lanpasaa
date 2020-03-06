@@ -36,7 +36,8 @@ const ShopItem = ({ item }) => {
           onClick={() => dispatch(actionViewItemDetails(
             item.id,
             item.name,
-            item.price))}>
+            item.price,
+            item.img))}>
           View</button>
         {
           cartIndex === -1

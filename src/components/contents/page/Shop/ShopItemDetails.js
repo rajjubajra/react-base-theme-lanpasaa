@@ -11,6 +11,7 @@ const ShopItemDetails = () => {
   const itemName = useSelector(state => state.reducerNavigation.itemName);
   const itemPrice = useSelector(state => state.reducerNavigation.itemPrice);
   const itemImage = useSelector(state => state.reducerNavigation.itemImage);
+  console.log(itemId, itemImage);
 
   /** in order to handle ADD_TO_CART and ADD_QTY */
   /** if Product Id exist take action ADD_QTY else ADD_TO_CART */
