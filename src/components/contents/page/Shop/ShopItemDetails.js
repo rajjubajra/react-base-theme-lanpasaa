@@ -10,6 +10,7 @@ const ShopItemDetails = () => {
   const itemId = useSelector(state => state.reducerNavigation.itemId);
   const itemName = useSelector(state => state.reducerNavigation.itemName);
   const itemPrice = useSelector(state => state.reducerNavigation.itemPrice);
+  const itemImage = useSelector(state => state.reducerNavigation.itemImage);
 
   /** in order to handle ADD_TO_CART and ADD_QTY */
   /** if Product Id exist take action ADD_QTY else ADD_TO_CART */
@@ -24,7 +25,7 @@ const ShopItemDetails = () => {
   return (
     <div className="product-item">
       <div className="image">
-        <img className="sale-item" src={require(`../../../../../../images/LanPasaa/fabrics-2.jpg`)} alt={itemId.name} />
+        <img className="sale-item" src={require(`../../../../images/LanPasaa/${itemImage}`)} alt={itemName} />
       </div>
       <div className="details">
         <div className="product-code">Product Code: {itemId}</div>

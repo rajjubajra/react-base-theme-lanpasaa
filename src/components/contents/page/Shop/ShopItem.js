@@ -24,7 +24,7 @@ const ShopItem = ({ item }) => {
     <div key={item.id} className="product-item">
       <div className="product-image">
         <img
-          src={require(`../../../../../../images/LanPasaa/${item.img}`)}
+          src={require(`../../../../images/LanPasaa/${item.img}`)}
           alt={item.name} />
       </div>
       <div className="product-name">

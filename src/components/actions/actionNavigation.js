@@ -8,12 +8,13 @@ export const actionCategoryNav = (category) => (
   }
 )
 
-export const actionViewItemDetails = (itemId, name, price) => (
+export const actionViewItemDetails = (itemId, name, price, image) => (
   {
     type: actionTypes.ITEM_DETAILS,
     itemId: itemId,
     itemName: name,
-    itemPrice: price
+    itemPrice: price,
+    itemImage: image
   }
 )
 

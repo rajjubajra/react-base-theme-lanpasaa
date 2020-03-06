@@ -4,7 +4,8 @@ import { actionTypes } from './actionTypes';
 export function actionFetchCategories() {
   return function (dispatch) {
     dispatch({ type: actionTypes.FETCH_LAN_PASAA_CATEGORIES_START })
-    axios.get("http://localhost:3000/LanPasaa")
+    axios.get("https://my-json-server.typicode.com/rajjubajra/json-server/LanPasaa")
+      //axios.get("http://localhost:3000/LanPasaa")
       .then((res) => {
         console.log("ACTION CATEGORY:", res.data[0].products);
         dispatch({

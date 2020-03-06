@@ -5,6 +5,7 @@ const initialState = {
   itemId: 0,
   itemName: '',
   itemPrice: 0,
+  itemImage: '',
   titleAnimation: false
 }
 
@@ -19,6 +20,7 @@ export const reducerNavigation = (state = initialState, action) => {
           itemId: action.itemId,
           itemName: action.itemName,
           itemPrice: action.itemPrice,
+          itemImage: action.itemImage
         }
       }
     case actionTypes.ITEM_DETAILS_CLEAR:
@@ -27,7 +29,8 @@ export const reducerNavigation = (state = initialState, action) => {
           category: state.category,
           itemId: 0,
           itemName: '',
-          itemPrice: 0
+          itemPrice: 0,
+          itemImage: ''
         }
       }
     case actionTypes.ADD_ANIMATION_TO_TITLE:
