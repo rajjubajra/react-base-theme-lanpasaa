@@ -37,7 +37,7 @@ const NavByGroup = () => {
       <div className="navshoplanpasaa">
         <ul>
           <li>
-            <Link to="/lanpasaa"
+            <Link to="/"
               onClick={() => dispatch(actionAddAnimationToTitle())}
               className="group-name">
               Home</Link></li>

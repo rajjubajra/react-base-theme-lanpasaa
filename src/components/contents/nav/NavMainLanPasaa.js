@@ -8,7 +8,7 @@ const main_menu = [
   {
     id: 1,
     name: 'Home',
-    path: 'lanpasaa'
+    path: '/'
   },
   {
     id: 2,

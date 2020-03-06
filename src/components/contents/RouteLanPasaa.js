@@ -15,7 +15,7 @@ const RouteLanPasaa = () => {
     */
     <>
       <Switch>
-        <Route path="/lanpasaa" component={PageLanPasaaLanding} />
+        <Route exact path="/" component={PageLanPasaaLanding} />
         <Route path="/lanpasaa-shop" component={PageLanPasaaShop} />
         <Route path="/lanpasaa-about" component={PageLanPasaaAbout} />
         <Route path="/lanpasaa-contact" component={PageLanPasaaContact} />
