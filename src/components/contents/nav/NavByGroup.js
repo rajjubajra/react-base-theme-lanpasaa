@@ -44,7 +44,7 @@ const NavByGroup = () => {
           {
             category_menu.map((item) => {
               return <li key={item.id}><Link to="#"
-                className="group-name">
+                className="group-name no-link" title="not active yet">
                 {item.name}</Link></li>
             })
           }
